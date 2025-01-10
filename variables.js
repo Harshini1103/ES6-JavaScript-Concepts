@@ -41,3 +41,68 @@ function Sum()
     
 }
 Sum()
+//In simple Ways-Very Easy Metods
+//1.Global Scope
+//var
+var a=10;
+function num()
+{
+console.log(a);
+
+}
+num();
+//let
+let a=10;
+function num()
+{
+console.log(a);
+
+}
+num();
+//const
+const a=10;
+function num()
+{
+    console.log(a);
+    
+}
+num();//2.Local Scope (or) Function Scope
+//var
+function num()
+{
+    var a=10;
+    console.log(a);
+    
+}
+num();
+//let
+function num()
+{
+    let a=10;
+    console.log(a);
+    
+}
+num();
+//const
+function num()
+{
+    const a=10;
+    console.log(a);
+    
+}
+num();
+//3.Block Scope
+//let
+{
+    let a=10
+   console.log(a);//accessible inside the block
+    
+}
+console.log(a);//Not Accessible
+//const
+{
+   const a=10
+   console.log(a); //accessible inside the block
+}
+console.log(a);//Not Accessible
+
